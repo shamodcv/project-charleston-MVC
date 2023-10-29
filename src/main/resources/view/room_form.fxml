@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RoomPane" prefHeight="763.0" prefWidth="1501.0" style="-fx-background-color: #043e5a;" stylesheets="@style/room-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Charleston.Controller.RoomFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="551.0" layoutY="14.0" prefHeight="69.0" prefWidth="429.0" text="Room Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="130.0" prefHeight="40.0" prefWidth="106.0" text="Room ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRoomId" layoutX="156.0" layoutY="135.0" prefHeight="0.0" prefWidth="207.0" />
+      <Label layoutX="14.0" layoutY="190.0" prefHeight="40.0" prefWidth="106.0" text="Room Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="246.0" prefHeight="40.0" prefWidth="106.0" text="Room Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRoomType" layoutX="156.0" layoutY="195.0" prefHeight="0.0" prefWidth="274.0" />
+      <TextField fx:id="txtRoomDetails" layoutX="156.0" layoutY="251.0" prefHeight="0.0" prefWidth="274.0" />
+      <Label layoutX="14.0" layoutY="303.0" prefHeight="40.0" prefWidth="127.0" text="Number of Beds" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumberofBeds" layoutX="156.0" layoutY="308.0" prefHeight="0.0" prefWidth="106.0" />
+      <Label layoutX="14.0" layoutY="356.0" prefHeight="40.0" prefWidth="94.0" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="965.0" layoutY="271.0" onAction="#txtSearchOnAction" prefHeight="0.0" prefWidth="361.0" />
+      <JFXButton fx:id="btnAdd" layoutX="913.0" layoutY="421.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: lightgreen;" styleClass="button-add" stylesheets="@style/room-form.css" text="Add">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="1059.0" layoutY="421.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: lightblue;" styleClass="button-update" stylesheets="@style/room-form.css" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="1353.0" layoutY="421.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #F83e44;" styleClass="button-delete" stylesheets="@style/room-form.css" text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1353.0" layoutY="271.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #a2a2bd;" styleClass="button-search" stylesheets="@style/room-form.css" text="Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#btnBackOnAction" prefHeight="24.0" prefWidth="116.0" style="-fx-background-color: grey;" styleClass="button-back" stylesheets="@style/room-form.css" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblRoom" layoutY="477.0" prefHeight="289.0" prefWidth="1501.0">
+        <columns>
+          <TableColumn fx:id="colRoomId" prefWidth="270.0" text="Room ID" />
+          <TableColumn fx:id="colRoomType" prefWidth="320.0" text="Room Type" />
+            <TableColumn fx:id="colRoomDetails" prefWidth="436.0" text="Room Details" />
+            <TableColumn fx:id="colNumberofBeds" prefWidth="213.0" text="Number of Beds" />
+            <TableColumn fx:id="colPrice" prefWidth="261.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="1207.0" layoutY="421.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #4e82f4;" styleClass="button-clear" stylesheets="@style/room-form.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtPrice" layoutX="156.0" layoutY="361.0" prefHeight="0.0" prefWidth="207.0" />
+   </children>
+</AnchorPane>

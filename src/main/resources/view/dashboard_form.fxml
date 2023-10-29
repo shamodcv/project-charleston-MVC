@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="763.0" prefWidth="1501.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Charleston.Controller.DashboardFormController">
+   <children>
+      <VBox alignment="TOP_RIGHT" prefHeight="767.0" prefWidth="392.0" style="-fx-background-color: #3a207f;">
+         <children>
+            <Pane prefHeight="173.0" prefWidth="392.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="112.0" layoutX="140.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="64.0" layoutY="106.0" prefHeight="53.0" prefWidth="264.0" text="The Charleston" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <JFXButton focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="210.0" onAction="#btnReservationOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Reservations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/reservation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton focusTraversable="false" graphicTextGap="10.0" onAction="#btnGuestOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Guest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="317.0" onAction="#btnReservationsDetailsOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Reservations Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/resume.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="424.0" onAction="#btnRoomsOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/bed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="531.0" onAction="#btnFoodMenuOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Food Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="638.0" onAction="#btnTourOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Tour" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/destination.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="581.0" onAction="#btnTourDetailsOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Tour Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/tour-guide.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="635.0" onAction="#btnOderOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Oders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/menu%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="657.0" onAction="#btnPaymentOnAction" prefHeight="65.0" prefWidth="392.0" style="-fx-background-color: #3a207f;" text="Payments" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/bill.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="712.0" fitWidth="1116.0" layoutX="392.0" layoutY="55.0" opacity="0.84" pickOnBounds="true">
+         <image>
+            <Image url="@../image/pg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="392.0" layoutY="-2.0" prefHeight="57.0" prefWidth="1116.0" style="-fx-background-color: #3a207f;">
+         <children>
+            <JFXButton layoutX="786.0" layoutY="12.0" onAction="#btnLogoutOnAction" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #64587d;" text="Logout" textFill="#e4dcdc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <Label fx:id="lblTime" layoutX="621.0" layoutY="9.0" prefHeight="41.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="416.0" layoutY="9.0" prefHeight="41.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="57.0" layoutX="1054.0" layoutY="7.0" onMouseClicked="#btnStOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="880.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="932.0" layoutY="14.0" prefHeight="31.0" prefWidth="112.0" text="Administrator" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="14.0" prefHeight="31.0" prefWidth="65.0" text="Date :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="556.0" layoutY="14.0" prefHeight="31.0" prefWidth="65.0" text="Time :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tblRoom" layoutX="435.0" layoutY="189.0" prefHeight="398.0" prefWidth="1031.0">
+         <columns>
+            <TableColumn fx:id="colRoomId" prefWidth="145.00003051757812" text="Room ID" />
+            <TableColumn fx:id="colRoomType" prefWidth="210.0" text="Room Type" />
+            <TableColumn fx:id="colRoomDetails" prefWidth="256.0" text="Room Details" />
+            <TableColumn fx:id="colNumberBeds" prefWidth="237.0" text="Number of Beds" />
+            <TableColumn fx:id="colPrice" prefWidth="180.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

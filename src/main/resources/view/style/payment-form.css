@@ -1,0 +1,27 @@
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}
+.button-add:hover{
+    -fx-effect: dropshadow(gaussian,#90EE90FF,20,0.0,0,0);
+}
+.button-clear:hover{
+    -fx-effect: dropshadow(gaussian,#4E82F4FF,20,0.0,0,0);
+}
+.button-delete:hover{
+    -fx-effect: dropshadow(gaussian, #f81014,20,0.0,0,0);
+}
+.button-search:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+.button-back:hover{
+    -fx-effect: dropshadow(gaussian,#9A8C8CFF,20,0.0,0,0);
+}.button-print:hover{
+     -fx-effect: dropshadow(gaussian,#00FF00FF,20,0.0,0,0);
+ }
+.button-update:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}

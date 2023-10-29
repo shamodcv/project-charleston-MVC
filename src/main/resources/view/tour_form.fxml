@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="TourPane" prefHeight="763.0" prefWidth="1501.0" style="-fx-background-color: #043e5a;" stylesheets="@style/tour-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Charleston.Controller.TourFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="502.0" layoutY="14.0" prefHeight="77.0" prefWidth="526.0" text="Tour Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="158.0" prefHeight="36.0" prefWidth="96.0" text="Tour ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTourId" layoutX="152.0" layoutY="161.0" prefHeight="0.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="234.0" prefHeight="36.0" prefWidth="96.0" text="Tour Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTourName" layoutX="153.0" layoutY="237.0" prefHeight="0.0" prefWidth="318.0" />
+      <Label layoutX="14.0" layoutY="314.0" prefHeight="36.0" prefWidth="129.0" text="Tour Description" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTourDescription" layoutX="153.0" layoutY="316.0" prefHeight="0.0" prefWidth="367.0" />
+      <Label layoutX="17.0" layoutY="388.0" prefHeight="36.0" prefWidth="116.0" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTourPrice" layoutX="153.0" layoutY="390.0" prefHeight="0.0" prefWidth="200.0" />
+      <JFXButton fx:id="btnAdd" layoutX="927.0" layoutY="443.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: lightgreen;" styleClass="button-add" stylesheets="@style/tour-form.css" text="Add">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1073.0" layoutY="443.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: lightBlue;" styleClass="button-update" stylesheets="@style/tour-form.css" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1358.0" layoutY="443.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #F83e44;" styleClass="button-delete" stylesheets="@style/tour-form.css" text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="985.0" layoutY="359.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="342.0" />
+      <JFXButton layoutX="1355.0" layoutY="359.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #A2a2bd;" styleClass="button-search" stylesheets="@style/tour-form.css" text="Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1216.0" layoutY="443.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #4e82f4;" styleClass="button-clear" stylesheets="@style/tour-form.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#btnBackOnAction" prefHeight="5.0" prefWidth="116.0" style="-fx-background-color: grey;" styleClass="button-back" stylesheets="@style/tour-form.css" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblTour" layoutY="499.0" prefHeight="268.0" prefWidth="1501.0">
+        <columns>
+          <TableColumn fx:id="colTourID" prefWidth="275.0" text="Tour ID" />
+          <TableColumn fx:id="colTourName" minWidth="0.0" prefWidth="381.0" style="backgroundcolor: #A2a2bd;" text="Tour Name" />
+            <TableColumn fx:id="colTourDescription" minWidth="0.0" prefWidth="492.0" text="Tour Description" />
+            <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="352.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

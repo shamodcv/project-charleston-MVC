@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OderPane" prefHeight="763.0" prefWidth="1501.0" style="-fx-background-color: #043e5a;" stylesheets="@style/order-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Charleston.Controller.OderFormController">
+   <children>
+      <Label layoutX="579.0" layoutY="14.0" prefHeight="66.0" prefWidth="373.0" text="Order Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#btnBackOnAction" prefHeight="11.0" prefWidth="116.0" style="-fx-background-color: #9a8c8c;" styleClass="button-back" stylesheets="@style/order-form.css" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPlaceOrder" layoutX="1353.0" layoutY="412.0" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: lightgreen;" styleClass="button-placeOder" stylesheets="@style/order-form.css" text="Place Order">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="116.0" prefHeight="42.0" prefWidth="116.0" />
+      <Label layoutX="14.0" layoutY="109.0" prefHeight="42.0" prefWidth="116.0" text="Order ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderId" layoutX="116.0" layoutY="115.0" prefHeight="1.0" prefWidth="184.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="383.0" layoutY="109.0" prefHeight="42.0" prefWidth="116.0" text="Reservation ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="173.0" prefHeight="42.0" prefWidth="116.0" text="Guest ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGuestId" layoutX="137.0" layoutY="173.0" prefHeight="42.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="383.0" layoutY="173.0" prefHeight="42.0" prefWidth="116.0" text="Room ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRoomId" layoutX="506.0" layoutY="173.0" prefHeight="42.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="238.0" prefHeight="42.0" prefWidth="116.0" text="Guest Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGuestName" layoutX="137.0" layoutY="238.0" prefHeight="42.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="383.0" layoutY="238.0" prefHeight="42.0" prefWidth="116.0" text="Order Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderDate" layoutX="506.0" layoutY="238.0" prefHeight="42.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXComboBox fx:id="cmbMealId" layoutX="116.0" layoutY="315.0" onAction="#mealOnAction" prefHeight="1.0" prefWidth="171.0" style="-fx-background-color: white;" />
+      <Label layoutX="14.0" layoutY="309.0" prefHeight="42.0" prefWidth="116.0" text="Meal ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="838.0" layoutX="115.0" layoutY="289.0" startX="-100.0" />
+      <Label layoutX="344.0" layoutY="315.0" prefHeight="42.0" prefWidth="116.0" text="Meal Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMealName" layoutX="467.0" layoutY="315.0" prefHeight="42.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="665.0" layoutY="315.0" prefHeight="42.0" prefWidth="116.0" text="Meal Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMealPrice" layoutX="788.0" layoutY="315.0" prefHeight="42.0" prefWidth="153.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="375.0" prefHeight="42.0" prefWidth="116.0" text="Qty" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="116.0" layoutY="381.0" prefHeight="1.0" prefWidth="87.0" />
+      <TableView fx:id="tblOder" layoutY="488.0" prefHeight="276.0" prefWidth="1501.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="113.0" text="Order ID" />
+          <TableColumn fx:id="colReservation" prefWidth="121.0" text="Reservation ID" />
+            <TableColumn fx:id="colRoomId" prefWidth="103.0" text="Room ID" />
+            <TableColumn fx:id="colGuestId" prefWidth="157.0" text="Guest ID" />
+            <TableColumn fx:id="colGuestName" prefWidth="167.0" text="Guest Name" />
+            <TableColumn fx:id="colOrderDate" prefWidth="155.0" text="Order Date" />
+            <TableColumn fx:id="colMealId" prefWidth="129.0" text="Meal ID" />
+            <TableColumn fx:id="colMealName" prefWidth="139.0" text="Meal Name" />
+            <TableColumn fx:id="colMealPrice" prefWidth="119.0" text="Meal Price" />
+            <TableColumn fx:id="colQty" prefWidth="77.0" text="Qty" />
+            <TableColumn fx:id="colTotalPrice" prefWidth="111.0" text="Total Price" />
+            <TableColumn fx:id="colOption" prefWidth="109.0" text="Option" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAddCart" layoutX="1196.0" layoutY="412.0" onAction="#btnAddCartOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: lightgreen;" styleClass="button-addToCart" stylesheets="@style/order-form.css" text="Add To Cart">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbResId" layoutX="515.0" layoutY="111.0" onAction="#ResOnAction" prefHeight="1.0" prefWidth="171.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

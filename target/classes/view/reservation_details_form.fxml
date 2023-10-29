@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReservationDetailsPane" prefHeight="763.0" prefWidth="1501.0" style="-fx-background-color: #043e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Charleston.Controller.ReservationDetailsFormController">
+   <children>
+      <Label layoutX="560.0" layoutY="19.0" prefHeight="75.0" prefWidth="410.0" text="Reservation Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="737.0" layoutY="190.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="426.0" />
+      <JFXButton layoutX="1192.0" layoutY="190.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #a2a2bd;" styleClass="button-search" stylesheets="@style/reservation-details-form.css" text="Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblReservationDetails" layoutY="330.0" prefHeight="438.0" prefWidth="1501.0" stylesheets="@style/reservation-details-form.css">
+        <columns>
+          <TableColumn fx:id="colReservationId" prefWidth="175.0" text="Reservation ID" />
+          <TableColumn fx:id="colRoomId" prefWidth="182.0" text="Room ID" />
+            <TableColumn fx:id="colRoomPrice" prefWidth="194.0" text="Room Price" />
+            <TableColumn fx:id="colGuestId" prefWidth="223.0" text="Guest ID" />
+            <TableColumn fx:id="colGuestName" minWidth="0.0" prefWidth="302.0" text="Guest Name" />
+            <TableColumn fx:id="colCheckinDate" prefWidth="199.0" text="Check in Date" />
+            <TableColumn fx:id="colCheckoutDate" prefWidth="206.0" text="Check out Date" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#btnBackOnAction" prefHeight="0.0" prefWidth="116.0" style="-fx-background-color: #9a8c8c;" styleClass="button-back" stylesheets="@style/reservation-details-form.css" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
